@@ -1,0 +1,35 @@
+# Dependencies and generated builds
+node_modules/
+client/dist/
+coverage/
+.cache/
+
+# Local database, sessions, and SQLite sidecar files
+server/data/*
+!server/data/.gitkeep
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite-journal
+
+# Environment secrets; retain safe configuration templates
+.env
+.env.*
+*.env
+!.env.example
+!.env.*.example
+
+# Local planning and verification notes (keep README.md public)
+/PROJECT_PLAN.md
+/VALIDATION.md
+
+# Test output and runtime logs
+test-results/
+playwright-report/
+blob-report/
+*.log
+
+# OS and local IDE metadata
+.DS_Store
+Thumbs.db
+.idea/
